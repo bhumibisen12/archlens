@@ -1,0 +1,9 @@
+opencv-python>=4.8,<5
+numpy>=1.24
+scikit-image>=0.22
+pyyaml>=6.0
+pydantic>=2.6
+streamlit>=1.30
+pytest>=8.0
+pytesseract>=0.3.10
+

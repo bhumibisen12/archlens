@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "box",
+      "bbox": {
+        "x": 336,
+        "y": 173,
+        "w": 155,
+        "h": 77
+      },
+      "label": "Auth Service",
+      "confidence": 1.0
+    },
+    {
+      "id": "n2",
+      "type": "database",
+      "bbox": {
+        "x": 783,
+        "y": 162,
+        "w": 128,
+        "h": 75
+      },
+      "label": "Redis Cache",
+      "confidence": 1.0
+    },
+    {
+      "id": "n3",
+      "type": "box",
+      "bbox": {
+        "x": 856,
+        "y": 560,
+        "w": 175,
+        "h": 82
+      },
+      "label": "Message Queue",
+      "confidence": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "directed": true,
+      "label": null,
+      "polyline": [
+        {
+          "x": 488.99835205078125,
+          "y": 214.47361755371094
+        },
+        {
+          "x": 784.9359741210938,
+          "y": 197.43353271484375
+        }
+      ],
+      "confidence": 1.0
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "target": "n3",
+      "directed": true,
+      "label": null,
+      "polyline": [
+        {
+          "x": 488.99835205078125,
+          "y": 214.47361755371094
+        },
+        {
+          "x": 689.1722412109375,
+          "y": 221.93080139160156
+        },
+        {
+          "x": 676.4806518554688,
+          "y": 590.9901733398438
+        },
+        {
+          "x": 857.7894287109375,
+          "y": 597.9572143554688
+        }
+      ],
+      "confidence": 1.0
+    }
+  ],
+  "metadata": {
+    "image_size": {
+      "width": 1280,
+      "height": 800
+    },
+    "timings_ms": {},
+    "source_image": "test_0001.png",
+    "ocr_engine": null,
+    "schema_version": "1.0"
+  }
+}

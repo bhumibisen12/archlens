@@ -1,0 +1,256 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "ellipse",
+      "bbox": {
+        "x": 192,
+        "y": 97,
+        "w": 184,
+        "h": 69
+      },
+      "label": "Web Client",
+      "confidence": 1.0
+    },
+    {
+      "id": "n2",
+      "type": "ellipse",
+      "bbox": {
+        "x": 261,
+        "y": 279,
+        "w": 159,
+        "h": 70
+      },
+      "label": "Mobile App",
+      "confidence": 1.0
+    },
+    {
+      "id": "n3",
+      "type": "ellipse",
+      "bbox": {
+        "x": 335,
+        "y": 418,
+        "w": 159,
+        "h": 74
+      },
+      "label": "Admin Portal",
+      "confidence": 1.0
+    },
+    {
+      "id": "n4",
+      "type": "ellipse",
+      "bbox": {
+        "x": 341,
+        "y": 612,
+        "w": 158,
+        "h": 64
+      },
+      "label": "User",
+      "confidence": 1.0
+    },
+    {
+      "id": "n5",
+      "type": "database",
+      "bbox": {
+        "x": 727,
+        "y": 117,
+        "w": 129,
+        "h": 69
+      },
+      "label": "Object Storage",
+      "confidence": 1.0
+    },
+    {
+      "id": "n6",
+      "type": "database",
+      "bbox": {
+        "x": 768,
+        "y": 226,
+        "w": 128,
+        "h": 72
+      },
+      "label": "Audit Log DB",
+      "confidence": 1.0
+    },
+    {
+      "id": "n7",
+      "type": "database",
+      "bbox": {
+        "x": 814,
+        "y": 361,
+        "w": 171,
+        "h": 66
+      },
+      "label": "MySQL DB",
+      "confidence": 1.0
+    },
+    {
+      "id": "n8",
+      "type": "database",
+      "bbox": {
+        "x": 724,
+        "y": 498,
+        "w": 165,
+        "h": 72
+      },
+      "label": "Users DB",
+      "confidence": 1.0
+    },
+    {
+      "id": "n9",
+      "type": "database",
+      "bbox": {
+        "x": 837,
+        "y": 632,
+        "w": 175,
+        "h": 66
+      },
+      "label": "PostgreSQL",
+      "confidence": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n7",
+      "directed": true,
+      "label": null,
+      "polyline": [
+        {
+          "x": 374.8027038574219,
+          "y": 133.43736267089844
+        },
+        {
+          "x": 607.3617553710938,
+          "y": 137.5858917236328
+        },
+        {
+          "x": 601.9015502929688,
+          "y": 388.7892761230469
+        },
+        {
+          "x": 814.6812744140625,
+          "y": 392.6434020996094
+        }
+      ],
+      "confidence": 1.0
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "target": "n5",
+      "directed": true,
+      "label": "REST",
+      "polyline": [
+        {
+          "x": 418.7889404296875,
+          "y": 315.5124206542969
+        },
+        {
+          "x": 727.7140502929688,
+          "y": 150.2200469970703
+        }
+      ],
+      "confidence": 1.0
+    },
+    {
+      "id": "e3",
+      "source": "n2",
+      "target": "n6",
+      "directed": true,
+      "label": "HTTP",
+      "polyline": [
+        {
+          "x": 418.7889404296875,
+          "y": 315.5124206542969
+        },
+        {
+          "x": 587.1077270507812,
+          "y": 318.5483093261719
+        },
+        {
+          "x": 588.4345092773438,
+          "y": 257.6142883300781
+        },
+        {
+          "x": 769.4050903320312,
+          "y": 260.8663635253906
+        }
+      ],
+      "confidence": 1.0
+    },
+    {
+      "id": "e4",
+      "source": "n2",
+      "target": "n9",
+      "directed": true,
+      "label": null,
+      "polyline": [
+        {
+          "x": 418.7889404296875,
+          "y": 315.5124206542969
+        },
+        {
+          "x": 838.0073852539062,
+          "y": 663.2498168945312
+        }
+      ],
+      "confidence": 1.0
+    },
+    {
+      "id": "e5",
+      "source": "n3",
+      "target": "n8",
+      "directed": true,
+      "label": "Cache",
+      "polyline": [
+        {
+          "x": 492.7597961425781,
+          "y": 456.801025390625
+        },
+        {
+          "x": 725.5330200195312,
+          "y": 532.06494140625
+        }
+      ],
+      "confidence": 1.0
+    },
+    {
+      "id": "e6",
+      "source": "n4",
+      "target": "n6",
+      "directed": true,
+      "label": null,
+      "polyline": [
+        {
+          "x": 497.6285705566406,
+          "y": 645.4736328125
+        },
+        {
+          "x": 640.0074462890625,
+          "y": 648.0927734375
+        },
+        {
+          "x": 648.4322509765625,
+          "y": 258.6924743652344
+        },
+        {
+          "x": 769.4050903320312,
+          "y": 260.8663635253906
+        }
+      ],
+      "confidence": 1.0
+    }
+  ],
+  "metadata": {
+    "image_size": {
+      "width": 1280,
+      "height": 800
+    },
+    "timings_ms": {},
+    "source_image": "test_0002.png",
+    "ocr_engine": null,
+    "schema_version": "1.0"
+  }
+}

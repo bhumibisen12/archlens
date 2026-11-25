@@ -1,0 +1,101 @@
+# Keyword-based role inference rules for ArchLens architectural review.
+# Evaluated in priority_order so compound labels (e.g., "API Gateway", "Auth Service")
+# resolve to their specialized architectural role before falling back to "service".
+
+priority_order:
+  - load_balancer
+  - gateway
+  - auth
+  - cache
+  - queue
+  - database
+  - user_client
+  - service
+
+roles:
+  load_balancer:
+    - load balancer
+    - loadbalancer
+    - alb
+    - nlb
+    - elb
+    - haproxy
+    - nginx
+  gateway:
+    - api gateway
+    - gateway
+    - apigw
+    - reverse proxy
+    - ingress
+    - proxy
+    - edge
+  auth:
+    - authentication
+    - authorization
+    - auth
+    - oauth
+    - oidc
+    - sso
+    - iam
+    - identity
+    - keycloak
+    - cognito
+  cache:
+    - redis
+    - memcached
+    - elasticache
+    - cache
+  queue:
+    - message queue
+    - event bus
+    - eventbus
+    - rabbitmq
+    - kafka
+    - pubsub
+    - sqs
+    - broker
+    - queue
+    - mq
+  database:
+    - postgresql
+    - postgres
+    - mysql
+    - mongodb
+    - mongo
+    - sqlite
+    - dynamodb
+    - oracle
+    - rds
+    - database
+    - warehouse
+    - object storage
+    - storage
+    - db
+  user_client:
+    - web client
+    - mobile app
+    - admin portal
+    - external webhook
+    - browser
+    - frontend
+    - client
+    - customer
+    - mobile
+    - user
+    - ui
+  service:
+    - microservice
+    - service
+    - worker
+    - engine
+    - backend
+    - server
+    - processor
+    - handler
+    - limiter
+    - api
+    - app
+
+default_labeled_role: service
+default_unlabeled_role: unknown
+
